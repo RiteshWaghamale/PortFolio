@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*{
+  background-color: black;
+  color: white;
+  font-family: 'poppins', sans-serif;
+}
+
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.animate-slideIn {
+  animation: slideIn 0.5s ease-in-out;
+}
+
+
+@keyframes textGlow {
+  0% {
+    color: #ff0000;
+    text-shadow: 0 0 10px #ff0000, 0 0 20px #ff7300;
+  }
+  50% {
+    color: #00ff00;
+    text-shadow: 0 0 20px #00ff00, 0 0 30px #00ff7f;
+  }
+  100% {
+    color: #d9ff00;
+    text-shadow: 0 0 10px #0000ff, 0 0 20px #7300ff;
+  }
+}
+
+.animate-textGlow {
+  animation: textGlow 4s infinite alternate;
+}
+
+
+
+
+ /* @keyframes textEffect {
+  0% { opacity: 0; transform: translateY(-10px); }
+  50% { opacity: 1; transform: translateY(0); }
+  100% { opacity: 0; transform: translateY(10px); }
+}
+
+.animate-text {
+  animation: textEffect 2s ease-in-out infinite;
+}  */
+
+/* @keyframes textEffect {
+  0% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-textEffect {
+  animation: bounceIn 1.5s ease-out forwards; /* Modify timing here for effect speed */
+
+  @keyframes welcomeEffect {
+    0% {
+      opacity: 0;
+      transform: translateY(-50px) scale(0.8);
+      text-shadow: 0 0 10px rgba(255, 0, 0, 0.7), 0 0 20px rgba(255, 0, 0, 0.6); /* Glowing red */
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0) scale(1.1); /* Bounce in effect */
+      text-shadow: 0 0 15px rgba(0, 255, 255, 0.8), 0 0 30px rgba(0, 255, 255, 0.6); /* Glowing cyan */
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(50px) scale(0.8); /* Exit with a bounce */
+      text-shadow: 0 0 10px rgba(255, 0, 0, 0.7), 0 0 20px rgba(255, 0, 0, 0.6); /* Glowing red */
+    }
+  }
+  
+  .animate-welcome {
+    animation: welcomeEffect 3s ease-in-out infinite;
+  }
+  
