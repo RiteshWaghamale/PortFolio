@@ -132,7 +132,7 @@ function Experiance() {
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-7 my-8">
           {cardItem.map(({ id, logo, name }) => (
             <div
-              className="relative flex flex-col items-center justify-center border-4 border-gradient-to-r from-[#00d4ff] via-[#39ff14] to-[#ff00ff] rounded-full md:w-[220px] md:h-[220px] shadow-lg p-6 cursor-pointer hover:scale-110 transform transition-all duration-300 ease-in-out hover:bg-gray-800 hover:shadow-2xl"
+              className="relative flex flex-col items-center justify-center border-4 border-gradient-to-r from-[#00d4ff] via-[#39ff14] to-[#ff00ff] rounded-full md:w-[220px] md:h-[220px] shadow-lg p-6 cursor-pointer hover:scale-110 transform transition-all duration-300 ease-in-out hover:bg-black-800 hover:shadow-2xl"
               key={id}
             >
               <img
