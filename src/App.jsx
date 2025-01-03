@@ -8,6 +8,7 @@ import Footer from './components/Footer'
 import Contact from './components/Contact'
 import { Toaster } from 'react-hot-toast'
 
+
 const App = () => {
   return (
     <>
@@ -22,8 +23,8 @@ const App = () => {
     <Contact/>
     <Footer/>
     </div>
+    {/* <Toaster/> */}
 
-    <Toaster/>
     </>
   )
 }

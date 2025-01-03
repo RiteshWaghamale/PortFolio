@@ -75,12 +75,11 @@
 
 
 
-
 import React, { useState } from "react";
 import pic from "/photo.avif";
 import { CiMenuBurger } from "react-icons/ci";
 import { IoClose } from "react-icons/io5";
-import { Link } from "react-scr";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   const [menu, setMenu] = useState(false);
@@ -95,7 +94,7 @@ const Navbar = () => {
 
   return (
     <div className="max-w-screen-2xl container mx-auto px-4 md:px-20 h-20 shadow-md bg-black fixed left-0 right-0 top-0 z-50">
-      <div className="flex justify-between items-center h-20">
+      <div className="flex justify-between items-center  h-20">
         {/* Logo */}
         <div className="flex space-x-3 items-center">
           <img
@@ -153,7 +152,7 @@ const Navbar = () => {
           onClick={() => setMenu(!menu)}
           className="md:hidden text-white cursor-pointer"
         >
-          {menu ? <CiMenuBurger size={28} /> : < IoClose size={28} />}
+          {menu ? < IoClose size={28} /> : < CiMenuBurger size={28} />}
         </div>
       </div>
 
