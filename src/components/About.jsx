@@ -89,7 +89,7 @@ function About() {
         <div>
           <h2 className="text-2xl font-semibold text-green-500 mb-4">Education & Training</h2>
           <span className="text-gray-300">
-            Core Java Certification, Great Learning, 2024 | JavaScript Certification, Great Learning, 2024 | Application of AI Certification, Great Learning, 2024
+           
           </span>
         </div>
 
