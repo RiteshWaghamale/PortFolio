@@ -99,9 +99,9 @@ function Footer() {
             {/* Footer Text */}
             <div className="mt-8 border-t border-gray-700 pt-8 flex flex-col items-center">
               <p className="text-sm text-gray-300">
-                &copy; 2024 Your Company. All rights reserved.
+                &copy; 2025 Your Company. All rights reserved.
               </p>
-              <p className="text-sm text-gray-500 mt-2">Supportive Partner ❤️ Ritesh</p>
+             
             </div>
           </div>
         </div>
